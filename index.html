@@ -30,11 +30,11 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '880370994857857');
+    fbq('init', '1625056095356499');
     fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=880370994857857&ev=PageView&noscript=1"/></noscript>
+    src="https://www.facebook.com/tr?id=1625056095356499&ev=PageView&noscript=1"/></noscript>
 
     <!-- Instagram Icon CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -232,7 +232,7 @@
                 <div class="col-md-4"><div class="p-3 rounded" style="background:var(--soft-lilac)"><strong>🎂 Age:</strong> Your Age</div></div>
                 <div class="col-md-4"><div class="p-3 rounded" style="background:var(--soft-lilac)"><strong>💼 Profession:</strong> Current Status</div></div>
             </div>
-            <p class="fs-6 fw-semibold mb-3">📌 Save My Number: <strong>7489335818</strong></p>
+            <p class="fs-6 fw-semibold mb-3">📌 Save My Number: <strong>7999820654</strong></p>
             <button class="wa-btn open-any" data-source="Final CTA" style="background:white;color:var(--emerald)"><i data-lucide="message-circle" width="22"></i>Message on WhatsApp Now</button>
         </div>
         <div class="card border-0 p-3 mb-3" style="background:rgba(255,255,255,.15)">
@@ -294,8 +294,8 @@ const formContainer=document.getElementById('formContainer');
 const mainForm=document.getElementById('mainForm');
 const sourceInfo=document.getElementById('sourceInfo');
 const closeFormBtn=document.getElementById('closeFormBtn');
-const SCRIPT_URL="https://script.google.com/macros/s/AKfycbxpCXaOHNvxbg98T-CdGV1f2RTFyGNKYw0BIsCWrGmaO3KbgiJSGvOpohpwzg7hoh-1/exec"; // Updated URL
-const WA_NUMBER_INT="917489335818"; // Manshi's number
+const SCRIPT_URL="https://script.google.com/macros/s/AKfycbxpCXaOHNvxbg98T-CdGV1f2RTFyGNKYw0BIsCWrGmaO3KbgiJSGvOpohpwzg7hoh-1/exec";
+const WA_NUMBER_INT="917999820654"; // Updated to 7999820654
 
 function openForm(source='site'){
     sourceInfo.value=source;
@@ -327,7 +327,7 @@ mainForm.addEventListener('submit',e=>{
     const fd=new FormData();
     fd.append('name',name);fd.append('phone',phone);fd.append('age',age);fd.append('gender',gender);fd.append('profession',profession);fd.append('source',sourceInfo.value||'Website');fd.append('timestamp',new Date().toISOString());
     fetch(SCRIPT_URL,{method:'POST',body:fd,mode:'no-cors'}).catch(()=>{});
-    // whatsapp
+    // whatsapp - leads go directly to 7999820654
     const msg=encodeURIComponent(`Hello Ma'am,\n\nI am interested in your program. Here are my details:\n\nName: ${name}\nPhone: ${phone}\nAge: ${age}\nGender: ${gender}\nProfession: ${profession}\n\nPlease share next steps. Thank you!`);
     if(typeof fbq!=='undefined'){fbq('track','Contact');fbq('track','Lead',{content_name:'WhatsApp Form Submission',content_category:'Lead Generation',content_source:sourceInfo.value})}
     window.open(`https://wa.me/${WA_NUMBER_INT}?text=${msg}`,'_blank');
